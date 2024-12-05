@@ -3,8 +3,8 @@
   <info>
     <title>Bio Web of Conference</title>
     <title-short>Bio Web of Conference</title-short>
-    <id>https://csol.or.id/reference/bio-web-of-conference</id>
-    <link href="https://csol.or.id/reference/bio-web-of-conference.csl" rel="self"/>
+    <id>https://github.com/ipung-uhb/biowebconferencecsl</id>
+    <link href="https://raw.githubusercontent.com/ipung-uhb/biowebconferencecsl/main/bio-web-of-conference.csl" rel="self"/>
     <link href="https://www.bio-conferences.org/" rel="documentation"/>
     <updated>2024-12-05T07:00:00+00:00</updated>
     <author>
@@ -12,8 +12,8 @@
     </author>
     <category citation-format="numeric"/>
     <category field="science"/>
-    <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License</rights>
-  </info>
+</info>
+
   <citation>
     <layout prefix="[" suffix="]" delimiter=",">
       <text variable="citation-number"/>
