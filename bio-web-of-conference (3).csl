@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>Bio Web of Conference</title>
+    <title-short>Bio Web of Conference</title-short>
+    <id>https://csol.or.id/reference/bio-web-of-conference</id>
+    <link href="https://csol.or.id/reference/bio-web-of-conference.csl" rel="self"/>
+    <link href="https://www.bio-conferences.org/" rel="documentation"/>
+    <updated>2024-12-05T07:00:00+00:00</updated>
+    <author>
+        <name>Custom</name>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="science"/>
+    <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License</rights>
+  </info>
+  <citation>
+    <layout prefix="[" suffix="]" delimiter=",">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography>
+    <layout delimiter=". ">
+      <text variable="citation-number" suffix=". "/>
+      <group delimiter=". ">
+        <names variable="author" delimiter=", " and="symbol">
+          <name form="short" initialize-with=". " sort-separator=" "/>
+        </names>
+        <text variable="title" suffix=". "/>
+        <choose>
+          <if type="article-journal">
+            <group delimiter=", ">
+              <text variable="container-title" font-style="italic" suffix=" "/>
+              <text variable="volume"/>
+              <text variable="issue"/>
+              <text variable="page"/>
+              <date variable="issued">
+                <date-part name="year" prefix=" (" suffix=")."/>
+              </date>
+              <text variable="DOI" prefix=". https://doi.org/" suffix="."/>
+            </group>
+          </if>
+          <if type="book">
+            <group delimiter=", ">
+              <text variable="publisher"/>
+              <text variable="publisher-place"/>
+              <date variable="issued">
+                <date-part name="year" prefix=" (" suffix=")"/>
+              </date>
+            </group>
+          </if>
+          <if type="paper-conference">
+            <group delimiter=", ">
+              <text variable="container-title" prefix="In Proceedings of the " suffix=", "/>
+              <text variable="event-title" suffix=", "/>
+              <text variable="event-place"/>
+              <date variable="issued">
+                <date-part name="year" prefix=" (" suffix=")"/>
+              </date>
+              <text variable="page" prefix=", "/>
+            </group>
+          </if>
+        </choose>
+      </group>
+    </layout>
+  </bibliography>
+</style>
